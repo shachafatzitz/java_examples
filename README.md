@@ -265,13 +265,22 @@ This commit sets up a basic Gradle project structure with necessary files.
 #### 7.1.2 Added Product entity, repository and controller
 
 This commit introduces the Product entity and its corresponding repository.
-- Created `Product.java` in `src/main/java/com/shop/model/` to define the Product entity.
-- Created `ProductRepository.java` in `src/main/java/com/shop/repository/` to handle database operations.
-- Created `ProductController.java` in `src/main/java/com/shop/controller/` to expose REST endpoints for Product.
+- Created `Product.java` in `src/main/java/com/shop/product/` to define the Product entity.
+- Created `ProductRepository.java` in `src/main/java/com/shop/product/` to handle database operations.
+- Created `ProductController.java` in `src/main/java/com/shop/product/` to expose REST endpoints for Product.
 - Created `DataLoader.java` in `src/main/java/com/shop/config/` to initialize sample data on application startup.
 
 #### 7.1.3 Configured Security with Spring Security
 
 This commit adds basic auth security features to the application using Spring Security.
-- Created `SecurityConfig.java` in `src/main/java/com/shop/config/` to configure HTTP security and authentication.
+- Created `SecurityConfig.java` in `src/main/java/com/shop/security/` to configure HTTP security and authentication.
+
+#### 7.1.4 Added Cart entity, repository, controller and service
+
+This commit introduces the Cart entity along with its repository, service, and controller.
+- Created `Cart.java` in `src/main/java/com/shop/cart/` to define the Cart entity.
+- Created `CartRepository.java` in `src/main/java/com/shop/cart/` to handle database operations for Cart.
+- Created `CartService.java` in `src/main/java/com/shop/cart/` to define the Cart service interface.
+- Created `CartServiceImpl.java` in `src/main/java/com/shop/cart/` to implement CartService interface.
+- Created `CartController.java` in `src/main/java/com/shop/cart/` to expose REST endpoints for Cart.
 
