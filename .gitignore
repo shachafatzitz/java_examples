@@ -4,6 +4,12 @@
 # Ignore Gradle build output directory
 build
 
+# Ignore IntelliJ IDEA project files
+.idea
+
+# Ignore VS Code project files
+.vscode
+
 # Compiled class file
 *.class
 
