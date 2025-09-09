@@ -1,4 +1,4 @@
-﻿package com.shop.config;
+package com.shop.config;
 
 import com.shop.product.Product;
 import com.shop.product.ProductRepository;

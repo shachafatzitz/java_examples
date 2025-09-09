@@ -229,26 +229,21 @@ spring.jpa.show-sql=true                      # EF logging
 
 ## 7. java_examples Demo Project
 
+> NOTE: All files should be saved as UTF-8 without BOM to avoid encoding issues.
+If a file contains BOM an error will occur during compilation.
+error: illegal character: '\ufeff'  
+
 The `java_examples` directory contains a sample Spring Boot project that demonstrates the concepts discussed in this guide.
 It includes:
 - A simple REST API with CRUD operations
 - Integration with an in-memory H2 database using JPA
-- Unit and integration tests using JUnit
-- Gradle build scripts for managing dependencies and tasks
 - Configuration files for application settings
-- Instructions for running and testing the application
 - Comments and documentation to explain key parts of the code
-- A README file with setup and usage instructions
 - A comparison of Java and .NET concepts used in the project
-- Examples of common patterns and best practices in Java development
-- Links to additional resources for learning Java and Spring Boot
-- A focus on making the project easy to understand for .NET developers transitioning to Java
-
 
 ### 7.1 Developing the Demo Project step by step
 
 The demo project was developed step by step in the following commits:
-- [Initial commit: Basic Gradle project setup](
 
 #### 7.1.1 Initial commit: Basic Gradle project setup
 
@@ -284,3 +279,12 @@ This commit introduces the Cart entity along with its repository, service, and c
 - Created `CartServiceImpl.java` in `src/main/java/com/shop/cart/` to implement CartService interface.
 - Created `CartController.java` in `src/main/java/com/shop/cart/` to expose REST endpoints for Cart.
 
+#### 7.1.5 Added Order entity, repository, controller and service
+
+This commit introduces the Order entity along with its repository, service, and controller.
+- Created `Order.java` in `src/main/java/com/shop/order/` to define the Order entity.
+- Created `OrderItem.java` in `src/main/java/com/shop/order/` to define the OrderItem entity.
+- Created `OrderRepository.java` in `src/main/java/com/shop/order/` to handle database operations for Order.
+- Created `CheckoutService.java` in `src/main/java/com/shop/order/` to define the Order service interface.
+- Created `CheclourSerivceImpl.java` in `src/main/java/com/shop/order/` to implement OrderService interface.
+- Created `OrderController.java` in `src/main/java/com/shop/order/` to expose REST endpoints for Order.
