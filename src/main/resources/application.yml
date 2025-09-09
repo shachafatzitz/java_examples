@@ -1,0 +1,19 @@
+# Spring Boot application configuration file
+spring:
+  # H2 in-memory database configuration
+  datasource:
+    url: jdbc:h2:mem:webshop;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+  # JPA and Hibernate configuration
+  jpa:
+    hibernate:
+      ddl-auto: update   # dev only; we’ll switch to Flyway later
+    properties:
+      hibernate.format_sql: true
+  # Enable H2 console for debugging
+  h2:
+    console:
+      enabled: true
+# Web server configuration
+server:
+  port: 8080

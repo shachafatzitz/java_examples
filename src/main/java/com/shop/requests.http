@@ -1,0 +1,35 @@
+﻿GET http://localhost:8080/api/products
+
+###
+
+POST http://localhost:8080/api/cart/items
+Authorization: Basic YWxpY2U6cGFzc3dvcmQ=
+Content-Type: application/json
+
+{
+  "productId": 3,
+  "quantity": 2
+}
+
+###
+
+PUT http://localhost:8080/api/cart/items/3?quantity=1
+Authorization: Basic YWxpY2U6cGFzc3dvcmQ=
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api/cart
+Authorization: Basic YWxpY2U6cGFzc3dvcmQ=
+
+###
+
+POST http://localhost:8080/api/orders/checkout
+Authorization: Basic YWxpY2U6cGFzc3dvcmQ=
+
+###
+
+GET http://localhost:8080/api/orders
+Authorization: Basic YWxpY2U6cGFzc3dvcmQ=
+
+
