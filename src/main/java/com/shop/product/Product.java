@@ -29,7 +29,7 @@ public class Product {
      * For example, the @Entity annotation marks a class as a persistent entity, meaning it represents a table in the database.
      * Other annotations like @Id, @Column, or @OneToMany further define how fields map to primary keys, columns, and relationships.
      *
-     * In the .NET world this will be conceptually similiar to EF Core attributes,
+     * In the .NET world this will be conceptually similar to EF Core attributes,
      * where attributes such as [Table], [Key], or [ForeignKey] are applied to classes and properties to define their mapping to the database.
      * In both Java and .NET, annotations/attributes provide a declarative way to configure persistence without writing explicit mapping files,
      * making the code more concise and readable.

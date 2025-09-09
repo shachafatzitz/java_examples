@@ -269,3 +269,9 @@ This commit introduces the Product entity and its corresponding repository.
 - Created `ProductRepository.java` in `src/main/java/com/shop/repository/` to handle database operations.
 - Created `ProductController.java` in `src/main/java/com/shop/controller/` to expose REST endpoints for Product.
 - Created `DataLoader.java` in `src/main/java/com/shop/config/` to initialize sample data on application startup.
+
+#### 7.1.3 Configured Security with Spring Security
+
+This commit adds basic auth security features to the application using Spring Security.
+- Created `SecurityConfig.java` in `src/main/java/com/shop/config/` to configure HTTP security and authentication.
+
