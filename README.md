@@ -261,3 +261,11 @@ This commit sets up a basic Gradle project structure with necessary files.
 - Added `README.md` with project overview and setup instructions.
 - Created `src/main/java/com/shop/Application.java` as the main entry point.
 - Created `src/main/resources/application.properties` for configuration.
+
+#### 7.1.2 Added Product entity, repository and controller
+
+This commit introduces the Product entity and its corresponding repository.
+- Created `Product.java` in `src/main/java/com/shop/model/` to define the Product entity.
+- Created `ProductRepository.java` in `src/main/java/com/shop/repository/` to handle database operations.
+- Created `ProductController.java` in `src/main/java/com/shop/controller/` to expose REST endpoints for Product.
+- Created `DataLoader.java` in `src/main/java/com/shop/config/` to initialize sample data on application startup.
