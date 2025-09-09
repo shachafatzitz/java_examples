@@ -8,6 +8,7 @@
 5. [Spring Boot vs ASP.NET Core](#5-spring-boot-vs-aspnet-core)
 6. [Key Differences Summary](#6-key-differences-summary)
 7. [java_examples Demo Project](#7-java_examples-demo-project)
+8. [Additional Resources](#8-additional-resources)
 
 ## 1. Introduction
 
@@ -288,3 +289,8 @@ This commit introduces the Order entity along with its repository, service, and 
 - Created `CheckoutService.java` in `src/main/java/com/shop/order/` to define the Order service interface.
 - Created `CheclourSerivceImpl.java` in `src/main/java/com/shop/order/` to implement OrderService interface.
 - Created `OrderController.java` in `src/main/java/com/shop/order/` to expose REST endpoints for Order.
+
+
+## 8. Additional Resources
+
+- Guide for Spring Boot JPA Repository: https://medium.com/@aissatoub4228/a-beginners-guide-to-spring-boot-jpa-repositories-simplifying-database-access-151a74a772db
